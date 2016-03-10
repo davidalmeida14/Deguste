@@ -8,8 +8,16 @@
 <ui:composition template="/templates/common.xhtml">
 	<ui:define name="body">
 	
-	Teste do Software
+	<h:form>
+		<h:outputText value="Nome: " />
+		<h:inputText value="#{funcionario.nome}"/>
+		
+		<h:commandButton value="Enviar" />
+		
+		<h:outputText value="#{funcionario.nome}" />
+	</h:form>
 	
 	</ui:define>
-	</ui:composition>
-	</html>
+</ui:composition>
+	
+</html>
