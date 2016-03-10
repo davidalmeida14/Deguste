@@ -1,0 +1,31 @@
+#logo{
+	width: 300px;
+	height: 150px;
+	margin: 0 auto;
+	left: 0px;
+	top: 0px;
+	float: left;
+}
+
+#logo a img{
+	border-style: none;
+}
+
+#tituloTopo{
+	margin: 0 auto;
+	margin-top: 10px;
+	left: 300px;
+	float: right;
+	text-align: right;
+}
+
+#topo{
+	float: left;
+	width:100%;
+}
+
+#divInfoServidor{
+	float: right;
+	height: 25px;
+	margin-top: 8px;
+}

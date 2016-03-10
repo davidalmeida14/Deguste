@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+      	<ui:composition>
+		<h:head>
+			<f:facet name="first">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			</f:facet>
+			
+			<script type="text/javascript" src="/Deguste/js/mask.js"></script>
+			<script type="text/javascript" src="/Deguste/js/jquery.maskedinput.js"></script>
+			<link href="/Deguste/css/principal.css" rel="stylesheet" type="text/css" media="all" />
+			<link href="/Deguste/css/aplicacao.css" rel="stylesheet" type="text/css" media="all" />
+			<link href="/Deguste/css/menu.css" rel="stylesheet" type="text/css" media="all" />
+			<link href="/Deguste/css/topo.css" rel="stylesheet" type="text/css" media="all" />
+			<script src="/Deguste/js/jquery.fn.gantt.js"></script>
+			
+		</h:head>
+
+		<h:body>
+			<f:view contentType="text/html" encoding="ISO-8859-1">
+				<p:ajaxStatus onstart="PF('statusDialog').show()" onsuccess="PF('statusDialog').hide()" />
+				<p:dialog widgetVar="statusDialog" modal="true" draggable="false" closable="false" resizable="false" showHeader="false">
+					<h:panelGrid cellpadding="5">
+						<h:graphicImage value="/imagem/ajaxloader.gif" style="margin-left: 10px;" />
+	         			<h:outputText value="Aguarde..." style="font-size: 12px;" />
+         			</h:panelGrid>
+				</p:dialog>
+
+				<div id="pagina">
+					<ui:insert name="header">
+					</ui:insert>
+					<div id="geral">
+
+						<div id="corpo" class="corpo">
+							
+							<ui:insert name="body" />
+						</div>
+						<table style="margin: auto;"><tr><td>
+							<ui:insert name="extrabody" />
+						</td></tr></table>
+					</div>
+					
+				</div>
+			</f:view>
+		</h:body>
+		</ui:composition>
+</html>

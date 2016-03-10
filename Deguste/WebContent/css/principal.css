@@ -1,0 +1,176 @@
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	margin: 0 auto;
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	
+	background-attachment:fixed;
+}
+
+fieldset{
+	border: 1px solid #C4C0B9;
+}
+
+legend{
+	font-size: 11px !important; 
+	font-weight: bold;
+	height: 16px;
+	color: #4F4F4F;
+}
+
+#pagina{
+	min-width: 90%;
+	max-width: 90%;
+	position:relative;
+	padding: 0% 5% 0% 5%;
+	min-height: 100%;
+}
+
+#geral{
+	left: 0px;
+	width:100%;
+	clear: both;
+}
+
+#rodape{
+	position: absolute;
+	width: 500px;
+	bottom: 0px;
+}
+
+.textoPequeno{
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+}
+
+a {
+	color: #0078D0;
+	font-size: 11px;
+}
+a:hover {
+	color: #0090FF;
+}
+a:visited {
+	color: #0090FF;
+}
+
+.corpo{
+	padding: 10px 0px 60px 0px;
+	height: 100%;
+}
+
+.barra{
+	height: 3px;
+	margin: 0px 0px 0px 0px;
+	border: none;
+	background: #fff url(../imagem/bg_panel.gif) repeat-x center;
+	background-size: 100%;
+	z-index: -100;
+}
+
+
+
+.titulo{
+	font-weight: bold;
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.desenvolvedor{
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-top: 0px;
+	margin-top: 10px;
+}
+
+.footer{
+	font-size: 10px;
+	padding-top: 10px;
+}
+
+label{
+	font-size: 11px !important;
+	margin-bottom: 2px;
+	margin-top: 3px;
+	float: left;
+	}
+	
+button{
+	font-size: 11px !important;
+}
+
+.tabela{
+	font-size: 11px !important;
+}
+	
+.outputTitulo{
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 2px;
+	margin-top: 3px;
+	}
+	
+.labelAcima{
+	width:50%;
+	display:inline;
+	float:left"
+}
+	
+input, textarea{
+	font-size: 12px !important;
+	color: #3f3925 !important;	
+	/*margin-bottom: 6px !important;*/
+	}
+	
+.divOutput{
+	text-align: right;
+	float: left;
+}
+	
+.divInput{
+	margin-left: 15px;
+	float:left;
+}
+
+/*Apenas no Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.inputText{
+		margin-bottom: 3px;
+	}
+}
+
+.centralizar{
+	margin: 0 auto;
+}
+
+.semborda tr,
+.semborda td {
+    border: none !important;
+}
+
+.outputLabel{
+	color: #000000;
+}
+
+.botoesFiltro span{
+	font-size: 10px !important;
+	margin: 0px !important;
+}
+
+
+.ui-selectmanycheckbox label, .ui-selectoneradio label {
+  display: block;
+  margin-top: 4px;
+  padding-right: 30px !important;
+  margin-right: 30px !important;
+}
+
+.margin-radio tbody tr td label {
+	margin-right: 14px !important;
+}
